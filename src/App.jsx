@@ -1,35 +1,61 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React from  'react'
 import './App.css'
+import Sidebar from './components/Sidebar'
+import Home from './components/Home'
+import Skills from './components/Skills'
+import Projects from './components/Projects'
+import Footer from './components/Footer'
+import {Routes, Route, useLocation} from 'react-router-dom'
+import BounceLoader from "react-spinners/BounceLoader";
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+
+  const [loading, setLoading] = React.useState(true);
+  const [color, setColor] = React.useState("#ffffff");
+  const [size, setSize] = React.useState(60);
+
+  React.useEffect(()=>{
+
+    setTimeout(() => {
+      setLoading(false)
+    },1500);
+  }, [])
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
+    <div className='min-h-screen text-4xl text-white relative'> 
+      {loading? 
+        <BounceLoader className='absolute m-auto top-1/2'
+          color={color}
+          loading={loading}
+          size={size}
+        />
+        :
+        <>
+      <Sidebar/>  
+      <Routes>
+        <Route path='/'>
+          <Route index element={<Home 
+          loading={loading}
+          color={color}
+          size={size}
+          />} />
+          <Route path='/skills' element={<Skills
+          loading={loading}
+          color={color}
+          size={size}
+          />}/>
+          <Route path='/projects' element={<Projects
+          loading={loading}
+          color={color}
+          size={size}
+          />}/>
+        </Route>
+      </Routes> 
+      <Footer/>
+      </>
+        
+}
     </div>
   )
 }
-
-export default App
