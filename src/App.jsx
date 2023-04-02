@@ -6,7 +6,8 @@ import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
 import {Routes, Route, useLocation} from 'react-router-dom'
-import BounceLoader from "react-spinners/BounceLoader";
+// import BounceLoader from "react-spinners/BounceLoader";
+import Contact from './components/Contact'
 
 export default function App() {
 
@@ -21,16 +22,19 @@ export default function App() {
     },1500);
   }, [])
 
-  return (
+   return (
 
-    <div className='min-h-screen text-4xl text-white relative'> 
-      {loading? 
-        <BounceLoader className='absolute m-auto top-1/2'
+     <div className='relative h-full text-4xl text-white'> 
+       {/* {loading? 
+      <div className='absolute w-10 h-10 left-[50%] bottom-[] '>
+        <BounceLoader 
           color={color}
           loading={loading}
           size={size}
         />
-        :
+      </div>
+        
+        : */}
         <>
       <Sidebar/>  
       <Routes>
@@ -50,12 +54,15 @@ export default function App() {
           color={color}
           size={size}
           />}/>
+          <Route path='/contact' element={<Contact 
+          loading={loading}
+          color={color}
+          size={size}
+          />}/>
         </Route>
       </Routes> 
       <Footer/>
       </>
-        
-}
     </div>
   )
 }
