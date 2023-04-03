@@ -13,9 +13,9 @@ import {motion} from 'framer-motion'
 export default function Skills(props) {
   return (
     <motion.div className='flex flex-col p-20 w-full min-h-screen justify-center items-start gap-16 md:pl-80'
-      initial={{width:0}}
-      animate={{width:'100%'}}
-      exit={{x:window.innerWidth, transition:{duration:0.5} }}
+    initial={{opacity:0}}
+    animate={{opacity:1}}
+    exit={{opacity:0}}
     >
 
 {/* x:window.innerWidth, transition:{duration:0.5} */}
@@ -27,10 +27,8 @@ export default function Skills(props) {
         />
         :
       <>
-
-        <div className='top skill-container grid grid-cols-2 auto-rows-fr gap-16  md:grid-cols-4'
-        
-        >
+        <h1 className='text-4xl md:text-6xl font-semibold'>Skills</h1>
+        <div className='top skill-container grid grid-cols-2 auto-rows-fr gap-16  md:grid-cols-4'>
           <div>
           <img src={html} alt="HTML" />
           </div>

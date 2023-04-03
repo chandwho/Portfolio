@@ -1,5 +1,4 @@
 import React from 'react'
-import BounceLoader from "react-spinners/BounceLoader";
 import {motion} from 'framer-motion' 
 import ProjectItem from './ProjectItem';
 import weatherapp from '../assets/images/weather_app.png'
@@ -14,52 +13,51 @@ export default function Projects(props) {
   return (
 
     <motion.div className='md:pl-80 p-20'
-      initial={{width:0}}
-      animate={{width:'100%'}}
-      exit={{x:window.innerWidth, transition:{duration:0.5} }}
+    initial={{opacity:0}}
+    animate={{opacity:1}}
+    exit={{opacity:0}}
       >
-      {props.loading? 
-        <BounceLoader className='absolute m-auto top-1/2'
-          color={props.color}
-          loading={props.loading}
-          size={props.size}
-        />:
       <>
-      <h1 className='text-3xl md:text-6xl font-semibold text-center mb-16'>Projects</h1>
+      <h1 className='text-4xl md:text-6xl font-semibold  mb-16'>Projects</h1>
       <div className='grid grid-col-1 auto-rows-fr gap-10 md:grid-cols-3'>
         <ProjectItem
         img={weatherapp}
         title='Weather App'
         url='https://chandwho.github.io/Weather_App/'
+        tech='JavaScript'
         />
         <ProjectItem
         img={codepen}
         title='Codepen'
         url='https://gleeful-maamoul-64f2c4.netlify.app'
+        tech='ReactJS'
         />
         <ProjectItem
         img={tenzies}
         title='Tenzies'
         url='https://chandwho.github.io/Tenzies_game/'
+        tech='ReactJS'
         />
         <ProjectItem
         img={etchsketch}
         title='Etch-a-Sketch'
         url='https://chandwho.github.io/Etch_a_Sketch/'
+        tech='JavaScript'
         />
         <ProjectItem
         img={calc}
         title='Calculator'
         url='https://chandwho.github.io/Calculator/'
+        tech='JavaScript'
         />
         <ProjectItem
         img={rps}
         title='Rock Paper Scissor'
         url='https://adorable-cactus-d851f8.netlify.app'
+        tech='JavaScript'
         />
       </div>
       </>
-}
     </motion.div>
   )
 }

@@ -10,16 +10,19 @@ import { NavLink, Outlet } from 'react-router-dom'
 
 export default function Sidebar() {
   return (
-    <div className='top-0 h-28 md:fixed p-10 top-28 h-full'>
-      <nav className='text-white text-5xl flex justify-center items-center md:flex-col justify-end gap-48'> 
+    <div className='top-0 h-28 md:fixed p-10 flex justify-center h-full'>
+      <nav className='text-white text-5xl flex justify-center items-center md:flex-col h-max-full gap-48'> 
         <NavLink to='/' className='shadow-xl'>
-        <FontAwesomeIcon icon={faIgloo}/>
+        <FontAwesomeIcon icon={faIgloo} 
+        className='transition duration-300 ease-out hover:text-[#022c43]'/>
         </NavLink>
         <NavLink to='/skills'>
-        <FontAwesomeIcon icon={faPenToSquare} />
+        <FontAwesomeIcon icon={faPenToSquare} 
+        className='transition duration-300 ease-out hover:text-[#022c43]'/>
         </NavLink>
         <NavLink to='/projects'>
-        <FontAwesomeIcon icon={faLaptopFile}/>
+        <FontAwesomeIcon icon={faLaptopFile}
+        className='transition duration-300 ease-out hover:text-[#022c43]'/>
         </NavLink>  
       </nav>
       <Outlet/> 
