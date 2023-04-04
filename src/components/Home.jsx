@@ -1,6 +1,6 @@
 import React from 'react'
 import img from '../assets/images/myimg.jpg'
-import BounceLoader from "react-spinners/BounceLoader";
+// import BounceLoader from "react-spinners/BounceLoader";
 import {motion} from 'framer-motion' 
 import { NavLink } from 'react-router-dom'
 
@@ -11,12 +11,12 @@ export default function Home(props) {
     animate={{opacity:1}}
     exit={{opacity:0}}
     >
-      {props.loading? 
+      {/* {props.loading? 
         <BounceLoader className='absolute m-auto'
           color={props.color}
           loading={props.loading}
           size={props.size}
-        />:
+        />: */}
       <>
         <div className='relative flex flex-col items-center justify-center gap-10 md:flex-row gap-14'>
             <div className='flex flex-col items-center justify-center font-semibold text-3xl p-14 w-full md:w-4/6 md:text-6xl md:p-0 md:items-start gap-6'>
@@ -29,12 +29,11 @@ export default function Home(props) {
             </div>   
         </div>
         <div className='absolute flex top-[65%] left-1/2 translate-x-[-50%] md:top-2/3 md:left-0 md:pl-80 md:translate-x-0 justify-start  '>
-        <NavLink to='/contact'>
+        <NavLink to='/Portfolio/contact'>
         <button className='text-3xl font-semibold bg-white text-yellow-600  border-2 h-20 w-60 rounded-xl hover:text-white hover:bg-[#022c43] hover:shadow-black transition duration-300 ease-in shadow-inner shadow-[#022c43]'>Contact Me</button>
         </NavLink>
         </div>
       </>
-}
     </motion.div>
   ) 
 }

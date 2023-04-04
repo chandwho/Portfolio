@@ -13,19 +13,19 @@ export default function Sidebar() {
     <div className='top-0 h-28 md:fixed p-10 flex justify-center h-full'>
       <nav className='text-white text-5xl flex justify-center items-center md:flex-col h-max-full gap-48'> 
         <div className='navlink relative'>
-        <NavLink to='/'>
+        <NavLink to='/Portfolio/'>
         <FontAwesomeIcon icon={faIgloo} 
         className='transition duration-300 ease-out hover:text-[#022c43]'/>
         </NavLink>
         </div>
         <div className='navlink relative'>
-        <NavLink to='/skills'>
+        <NavLink to='/Portfolio/skills'>
         <FontAwesomeIcon icon={faPenToSquare} 
         className='transition duration-300 ease-out hover:text-[#022c43]'/>
         </NavLink>
         </div>
         <div className='navlink relative'>
-        <NavLink to='/projects'>
+        <NavLink to='/Portfolio/projects'>
         <FontAwesomeIcon icon={faLaptopFile}
         className='transition duration-300 ease-out hover:text-[#022c43]'/>
         </NavLink> 

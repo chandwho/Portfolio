@@ -7,7 +7,7 @@ import bootstrap from '../assets/images/bootstrap.png'
 import tailwind from '../assets/images/tailwind.svg'
 import react from '../assets/images/react.svg'
 import git from '../assets/images/git.svg'
-import BounceLoader from "react-spinners/BounceLoader";
+// import BounceLoader from "react-spinners/BounceLoader";
 import {motion} from 'framer-motion' 
 
 export default function Skills(props) {
@@ -19,13 +19,13 @@ export default function Skills(props) {
     >
 
 {/* x:window.innerWidth, transition:{duration:0.5} */}
-      {props.loading? 
+      {/* {props.loading? 
         <BounceLoader className='absolute m-auto top-1/2'
           color={props.color}
           loading={props.loading}
           size={props.size}
         />
-        :
+        : */}
       <>
         <h1 className='text-4xl md:text-6xl font-semibold'>Skills</h1>
         <div className='top skill-container grid grid-cols-2 auto-rows-fr gap-16  md:grid-cols-4'>
@@ -52,7 +52,6 @@ export default function Skills(props) {
           </div>
         </div>  
       </>
-      }
     </motion.div>
   )
 }

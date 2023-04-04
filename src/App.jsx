@@ -38,23 +38,23 @@ export default function App() {
         <>
       <Sidebar/>  
       <Routes>
-        <Route path='/'>
+        <Route path='/Portfolio/'>
           <Route index element={<Home 
           loading={loading}
           color={color}
           size={size}
           />} />
-          <Route path='/skills' element={<Skills
+          <Route path='/Portfolio/skills' element={<Skills
           loading={loading}
           color={color}
           size={size}
           />}/>
-          <Route path='/projects' element={<Projects
+          <Route path='/Portfolio/projects' element={<Projects
           loading={loading}
           color={color}
           size={size}
           />}/>
-          <Route path='/contact' element={<Contact 
+          <Route path='/Portfolio/contact' element={<Contact 
           loading={loading}
           color={color}
           size={size}

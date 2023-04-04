@@ -16,7 +16,7 @@ export default function Footer() {
         <a href="https://www.linkedin.com/in/chandan-pandey06">
           <FontAwesomeIcon icon={faLinkedin} className='hover:text-[#022c43]'/>
         </a>   
-        <NavLink to='/contact'>
+        <NavLink to='/Portfolio/contact'>
           <FontAwesomeIcon icon={faEnvelope} className='hover:text-[#022c43]'/>
         </NavLink>
         </nav>
