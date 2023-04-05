@@ -46,7 +46,7 @@ export default function App() {
           />} />
           <Route path='/Portfolio/skills' element={<Skills
           loading={loading}
-          color={color}
+          color={color}   
           size={size}
           />}/>
           <Route path='/Portfolio/projects' element={<Projects
