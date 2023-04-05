@@ -28,7 +28,7 @@ export default function Skills(props) {
         : */}
       <>
         <h1 className='text-4xl md:text-6xl font-semibold'>Skills</h1>
-        <div className='top skill-container grid grid-cols-2 auto-rows-fr gap-16  md:grid-cols-4'>
+        <div className='top skill-container grid grid-cols-2 auto-rows-fr gap-16  md:grid-cols-3 lg:grid-cols-4'>
           <div>
           <img src={html} alt="HTML" />
           </div>

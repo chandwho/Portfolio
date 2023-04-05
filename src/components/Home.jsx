@@ -26,13 +26,15 @@ export default function Home(props) {
             </div>
             <div className='flex justify-center w-3/6 md:w-2/6'>
               <img src={img} alt='My Image'className='border rounded-xl brightness-50 sepia hover:brightness-100 hover:sepia-0 transition duration-300 ease-in md:w-3/4 '/>
-            </div>   
+            </div> 
+            <div className='md:absolute flex  md:bottom-0 md: left-[-17%] md:pl-80 md:translate-x-0 justify-start  '>
+              <NavLink to='/Portfolio/contact'>
+              <button className='text-3xl font-semibold bg-white text-yellow-600  border-2 h-20 w-60 rounded-xl hover:text-white hover:bg-[#022c43] hover:shadow-black transition duration-300 ease-in shadow-inner shadow-[#022c43]'>Contact Me</button>
+              </NavLink>
+            </div>
         </div>
-        <div className='absolute flex top-[65%] left-1/2 translate-x-[-50%] md:top-2/3 md:left-0 md:pl-80 md:translate-x-0 justify-start  '>
-        <NavLink to='/Portfolio/contact'>
-        <button className='text-3xl font-semibold bg-white text-yellow-600  border-2 h-20 w-60 rounded-xl hover:text-white hover:bg-[#022c43] hover:shadow-black transition duration-300 ease-in shadow-inner shadow-[#022c43]'>Contact Me</button>
-        </NavLink>
-        </div>
+        
+        
       </>
     </motion.div>
   ) 

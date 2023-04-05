@@ -19,7 +19,7 @@ export default function Projects(props) {
       >
       <>
       <h1 className='text-4xl md:text-6xl font-semibold  mb-16'>Projects</h1>
-      <div className='grid grid-col-1 auto-rows-fr gap-10 md:grid-cols-3'>
+      <div className='grid auto-rows-fr gap-10 md:grid-cols-2 lg:grid-cols-3'>
         <ProjectItem
         img={weatherapp}
         title='Weather App'
