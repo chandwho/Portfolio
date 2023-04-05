@@ -13,7 +13,7 @@ export default function Sidebar() {
     <div className='top-0 h-28 md:fixed p-10 flex justify-center h-full'>
       <nav className='text-white text-5xl flex justify-center items-center md:flex-col h-max-full gap-48'> 
         <div className='navlink relative'>
-        <NavLink to='/Portfolio/'>
+        <NavLink to='/'>
         <FontAwesomeIcon icon={faIgloo} 
         className='transition duration-300 ease-out hover:text-[#022c43]'/>
         </NavLink>

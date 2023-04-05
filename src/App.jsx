@@ -38,7 +38,7 @@ export default function App() {
         <>
       <Sidebar/>  
       <Routes>
-        <Route path='/Portfolio/'>
+        <Route path='/'>
           <Route index element={<Home 
           loading={loading}
           color={color}
