@@ -12,14 +12,14 @@ import rps from '../assets/images/rps.png'
 export default function Projects(props) {
   return (
 
-    <motion.div className='md:pl-80 p-20'
+    <motion.div className='md:pl-80 p-20 md:p-20 md:h-[600px] flex flex-col items-center md:items-start'
     initial={{opacity:0}}
     animate={{opacity:1}}
     exit={{opacity:0}}
       >
       <>
-      <h1 className='text-4xl md:text-6xl font-semibold  mb-16'>Projects</h1>
-      <div className='grid auto-rows-fr gap-10 md:grid-cols-2 lg:grid-cols-3'>
+      <h1 className='text-4xl md:text-5xl lg:text-6xl font-semibold  mb-10 text-yellow-400'>Projects</h1>
+      <div className='grid auto-rows-fr gap-10 md:grid-cols-2 lg:grid-cols-3 justify-center'>
         <ProjectItem
         img={weatherapp}
         title='Weather App'

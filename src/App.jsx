@@ -11,16 +11,16 @@ import Contact from './components/Contact'
 
 export default function App() {
 
-  const [loading, setLoading] = React.useState(true);
+  // const [loading, setLoading] = React.useState(true);
   const [color, setColor] = React.useState("#ffffff");
   const [size, setSize] = React.useState(60);
 
-  React.useEffect(()=>{
+  // React.useEffect(()=>{
 
-    setTimeout(() => {
-      setLoading(false)
-    },1500);
-  }, [])
+  //   setTimeout(() => {
+  //     setLoading(false)
+  //   },1500);
+  // }, [])
 
    return (
 
@@ -29,7 +29,7 @@ export default function App() {
       <div className='absolute w-10 h-10 left-[50%] bottom-[] '>
         <BounceLoader 
           color={color}
-          loading={loading}
+          // loading={loading}
           size={size}
         />
       </div>
@@ -40,22 +40,22 @@ export default function App() {
       <Routes>
         <Route path='/'>
           <Route index element={<Home 
-          loading={loading}
+          // loading={loading}
           color={color}
           size={size}
           />} />
           <Route path='/Portfolio/skills' element={<Skills
-          loading={loading}
+          // loading={loading}
           color={color}   
           size={size}
           />}/>
           <Route path='/Portfolio/projects' element={<Projects
-          loading={loading}
+          // loading={loading}
           color={color}
           size={size}
           />}/>
           <Route path='/Portfolio/contact' element={<Contact 
-          loading={loading}
+          // loading={loading}
           color={color}
           size={size}
           />}/>
