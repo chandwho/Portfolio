@@ -18,8 +18,8 @@ export default function Home(props) {
           loading={props.loading}
           size={props.size}
         />: */}
-        <div className='relative flex flex-col gap-10 md:flex-row mb-10'>
-            <div className='flex flex-col justify-end items-center font-semibold text-3xl w-full md:w-4/6 md:text-4xl lg:text-6xl md:p-0 md:items-start gap-6'>
+        <div className='relative flex flex-col gap-14 md:flex-row mb-10'>
+            <div className='flex flex-col justify-end items-center font-bold text-[21px] w-full md:w-4/6 md:text-4xl lg:text-6xl md:p-0 md:items-start gap-6'>
               <h1>Hi!</h1> 
               <h1>Chandan here.</h1>
               <TypeAnimation

@@ -16,7 +16,7 @@ export default function ProjectItem(props) {
         <p className='text-xl md:text-3xl font-semibold bg-white text-[#022c43] text-center p-4 rounded-xl cursor-pointer shadow-inner hover:shadow-black z-20'>Take a look</p>
       </a>
     </div>
-        <img src={props.img} alt='Weather App' className='rounded group-hover:opacity-10 z-0 w-max'/>
+        <img src={props.img} alt='Weather App' className='rounded group-hover:opacity-10 z-0 w-full'/>
     </motion.div>
   )
 }

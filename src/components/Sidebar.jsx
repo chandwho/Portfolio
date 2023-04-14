@@ -15,19 +15,19 @@ export default function Sidebar() {
         <div className='navlink relative'>
         <NavLink to='/'>
         <FontAwesomeIcon icon={faIgloo} 
-        className='transition duration-300 ease-out hover:text-[#022c43]'/>
+        className='transition duration-300 ease-out hover:text-green-600'/>
         </NavLink>
         </div>
         <div className='navlink relative'>
         <NavLink to='/Portfolio/skills'>
         <FontAwesomeIcon icon={faPenToSquare} 
-        className='transition duration-300 ease-out hover:text-[#022c43]'/>
+        className='transition duration-300 ease-out hover:text-green-600'/>
         </NavLink>
         </div>
         <div className='navlink relative'>
         <NavLink to='/Portfolio/projects'>
         <FontAwesomeIcon icon={faLaptopFile}
-        className='transition duration-300 ease-out hover:text-[#022c43]'/>
+        className='transition duration-300 ease-out hover:text-green-600'/>
         </NavLink> 
         </div>  
       </nav>

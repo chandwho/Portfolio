@@ -6,7 +6,7 @@ import codepen from '../assets/images/codepen.png'
 import tenzies from '../assets/images/tenzies.png'
 import etchsketch from '../assets/images/etchsketch.png'
 import calc from '../assets/images/calc.png'
-import rps from '../assets/images/rps.png' 
+import netflix from '../assets/images/netflix.png' 
 
 
 export default function Projects(props) {
@@ -20,6 +20,12 @@ export default function Projects(props) {
       <>
       <h1 className='text-4xl md:text-5xl lg:text-6xl font-semibold  mb-10 text-yellow-400'>Projects</h1>
       <div className='grid auto-rows-fr gap-10 md:grid-cols-2 lg:grid-cols-3 justify-center'>
+        <ProjectItem
+        img={netflix}
+        title='Netflix'
+        url='https://chandwho.github.io/Netflix_Clone/'
+        tech='ReactJs'
+        />
         <ProjectItem
         img={weatherapp}
         title='Weather App'
@@ -48,12 +54,6 @@ export default function Projects(props) {
         img={calc}
         title='Calculator'
         url='https://chandwho.github.io/Calculator/'
-        tech='JavaScript'
-        />
-        <ProjectItem
-        img={rps}
-        title='Rock Paper Scissor'
-        url='https://adorable-cactus-d851f8.netlify.app'
         tech='JavaScript'
         />
       </div>
