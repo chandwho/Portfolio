@@ -4,7 +4,7 @@ import {motion} from 'framer-motion'
 
 export default function ProjectItem(props) {
   return (
-  <motion.div className='relative flex justify-center shadow-lg shadow-black  rounded group hover:bg-gradient-to-r from-white  to-[#022c43] z-0 w-[250px] h-[180px] md:h-[230px] md:max-w-[400px]'
+  <motion.div className='relative flex justify-center shadow-lg shadow-black  rounded group hover:bg-gradient-to-r from-white  to-[#022c43] z-0 max-w-[280px] h-[200px] md:h-[230px] md:max-w-[350px]'
   initial={{opacity:0}}
   animate={{opacity:1}}
   exit={{opacity:0}}
