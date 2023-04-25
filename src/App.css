@@ -70,23 +70,26 @@ textarea{
 .top div:nth-child(2):hover::after{
   content: "CSS";
 }
-.top div:nth-child(3):hover::after{
+/* .top div:nth-child(3):hover::after{
   content: "Bootstrap";
-}
-.top div:nth-child(4):hover::after{
+} */
+.top div:nth-child(3):hover::after{
   content: "Tailwind";
 }
-.top div:nth-child(5):hover::after{
+.top div:nth-child(4):hover::after{
   content: "JavaScript";
 }
-.top div:nth-child(6):hover::after{
+.top div:nth-child(5):hover::after{
   content: "ReactJS";
 }
-.top div:nth-child(7):hover::after{
+.top div:nth-child(6):hover::after{
   content: "Git";
 }
-.top div:nth-child(8):hover::after{
+.top div:nth-child(7):hover::after{
   content: "Firebase";
+}
+.top div:nth-child(8):hover::after{
+  content: "Redux";
 }
 
 .navlink:nth-child(1):after,
